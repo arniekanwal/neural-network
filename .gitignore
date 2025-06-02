@@ -33,3 +33,7 @@
 
 # Build Path
 build/*
+
+# Developer Environment
+.vscode/*
+logs/*
