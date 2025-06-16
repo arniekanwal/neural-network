@@ -9,7 +9,7 @@ project(NeuralNetwork VERSION 1.0
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Fetch outside dependencies
+# Fetch Eigen for LinAlg support
 include(FetchContent)
 
 FetchContent_Declare(
@@ -20,6 +20,16 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(Eigen3)
 
+# Fetch Catch2 for test driven development
+FetchContent_Declare(
+    Catch2
+    GIT_REPOSITORY  https://github.com/catchorg/Catch2.git
+    GIT_TAG         v3.4.0 # or a later release
+    GIT_SHALLOW     TRUE 
+)
+FetchContent_MakeAvailable(Catch2)
+
 # Add our subdirectories
 add_subdirectory(appl)
-add_subdirectory(lib)
+add_subdirectory(nn-model)
+# add_subdirectory(tests)

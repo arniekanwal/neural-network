@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-#include "libNeuralNet.h"
+#include "nnLayer.hpp"
 
 using namespace std;
 
@@ -13,7 +13,8 @@ int main(int argc, char *argv[]) {
      * version info (i.e library versions) at the beginning of the 
      * program runtime
      */
-    do_something();
+    nnDenseLayer nn;
+    nn.feed_forward();
 
     return 0;
 }

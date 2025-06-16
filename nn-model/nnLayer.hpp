@@ -1,6 +1,9 @@
 #ifndef LIBNEURALNET_H
 #define LIBNEURALNET_H
 
-int do_something();
+class nnDenseLayer {
+public:
+    void feed_forward();
+};
 
 #endif /* LIBNEURALNET_H */

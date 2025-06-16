@@ -1,8 +1,10 @@
 # Set the project name
-project(lib)
+project(neural-network)
 
 # Add a library with the above sources
-add_library(${PROJECT_NAME} libNeuralNet.cpp)
+add_library(${PROJECT_NAME} 
+    nnLayer.cpp
+)
 
 # Link Eigen (external dependency for LinAlg features like matrix math)
 target_link_libraries(${PROJECT_NAME}
