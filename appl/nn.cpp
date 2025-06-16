@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-#include "nnLayer.hpp"
+#include "nn_layer.hpp"
 
 using namespace std;
 

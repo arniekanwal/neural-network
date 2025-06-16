@@ -3,7 +3,8 @@ project(neural-network)
 
 # Add a library with the above sources
 add_library(${PROJECT_NAME} 
-    nnLayer.cpp
+    nn_layer.cpp
+    nn_activation.cpp
 )
 
 # Link Eigen (external dependency for LinAlg features like matrix math)

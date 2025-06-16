@@ -4,7 +4,7 @@
 
 #include <Eigen/Dense>
 
-#include "nnLayer.hpp"
+#include "nn_layer.hpp"
 
 using namespace Eigen;
 
