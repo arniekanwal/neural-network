@@ -24,7 +24,7 @@ FetchContent_MakeAvailable(Eigen3)
 FetchContent_Declare(
     Catch2
     GIT_REPOSITORY  https://github.com/catchorg/Catch2.git
-    GIT_TAG         v3.4.0 # or a later release
+    GIT_TAG         v3.8.1 # or a later release
     GIT_SHALLOW     TRUE 
 )
 FetchContent_MakeAvailable(Catch2)
@@ -32,4 +32,4 @@ FetchContent_MakeAvailable(Catch2)
 # Add our subdirectories
 add_subdirectory(appl)
 add_subdirectory(nn-model)
-# add_subdirectory(tests)
+add_subdirectory(tests)
